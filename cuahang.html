@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cửa hàng</title>
+	<script>
+		var t;
+		var currentIndex=1;
+		function next(){
+			clearInterval(t);
+			if(currentIndex < 5){
+				currentIndex++;
+				document.getElementById("hinhslide").src = "images/chuyenhinh/" + currentIndex + ".jpg";
+			}
+			else{
+				currentIndex=1;
+				document.getElementById("hinhslide").src = "images/chuyenhinh/" + currentIndex + ".jpg";
+			}
+			
+		}
+		function back(){
+			clearInterval(t);
+			if(currentIndex > 1){
+				currentIndex--;
+				document.getElementById("hinhslide").src = "images/chuyenhinh/" + currentIndex + ".jpg";
+			}
+			else{
+				currentIndex=5;
+				document.getElementById("hinhslide").src = "images/chuyenhinh/" + currentIndex + ".jpg";
+			}
+		
+		}
+
+	</script>
+</head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+<link rel="stylesheet" type="text/css" href="css/dangky.css">
+<link rel="stylesheet" type="text/css" href="css/dangky.css">
+	<body style="background-repeat: no-repeat;">
+	<div id="container">
+		<header>
+			<div id="region">
+				<a href="#"><img src="images/lang_vn.png" height="20px"></a>
+			</div>
+			<div id="login">
+				<a href="dangnhap.html">Đăng nhập</a>
+				&nbsp;
+				&nbsp;
+				<a href="dangky.html">Đăng ký</a>
+				&nbsp;
+				&nbsp;
+			</div>
+			<div id="logo">
+				<img src="images/logo giay.webp">
+			</div>
+		</header>
+		<nav class="menu">
+			<div id="sub">
+				<ul>
+					<li class="content"><a href="trangchu.html">TRANG CHỦ</a></li>
+					<li class="content"><a href="gioithieu.html">GIỚI THIỆU</a></li>
+					<li class="content">
+						<div class="dropdown">
+							<a href="#">SẢN PHẨM<span class="menu-list">&#9660;</span>
+							</a>
+							<div class="dropdown-content">
+								<br><a href="dihoc.html" style="color: black;">Đi học</a></br>
+								&nbsp;&nbsp; 
+								<br><a href="dilam.html" style="color: black;">Đi làm</a></br>
+								&nbsp;&nbsp; 
+								<br><a href="dichoi.html" style="color: black;">Đi chơi</a></br>
+								&nbsp;&nbsp; 
+								<br><a href="thethao.html" style="color: black;">Thể thao</a></br>
+								&nbsp;&nbsp; 
+								<br><a href="quatang.html" style="color: black;">Quà tặng</a></br>
+								&nbsp;&nbsp; 
+								
+							</div>
+						</div>
+					</li>					
+					<li><a href="cuahang.html">CỬA HÀNG</a></li>
+					<li><a href="Lienhe.html">LIÊN HỆ </a></li>
+					
+				</ul>
+				<div>
+					<input type="text" size="36" name="tsearch" placeholder="Nhập từ khóa..">
+					<a href="#" title="Tìm kiếm"><img src="images/search.png"></a>
+				</div>
+		  </div>
+		</nav>
+		<aside id="left">
+			<div id="danhmuc">
+				<p>OPTIONS</p>
+				<ul type="square">
+        			<li><a href="dichoi.html">Nike</a></li>
+					<li><a href="dichoi.html">Adidas</a></li>
+					<li><a href="dihoc.html">Puma</a></li>
+					<li><a href="dihoc.html">Man</a></li>
+					<li><a href="dilam.html">Woman</a></li>
+					<li><a href="dichoi.html">Young</a></li>
+					<li><a href="dilam.html">Old</a></li>
+  				</ul>
+				</div>
+		</aside>
+		<aside id="right">
+			<div id="anh">
+			<img id="hinhslide" src="images/peace.jpg">
+
+			</div>
+			<div class="sach">
+				<a href="Lienhe.html"><img class="hinhsach" src="../bt10 Đàm Nhật Anh/giay_boot_nam_phong_cach_han_quoc_a73d.jpg"/></a>
+				<p class="tensach"><font color="blue"><b>Ankle Boots</b></font></p>
+				<p class="dongia">Giá:<span class="gia"> <font color="red">Liên hệ</font></span></p>
+			</div>
+			<div class="sach">
+				<a href= "Lienhe.html"><img class="hinhsach" src="images/s-l1600.jpg" /></a>
+				<p class="tensach"><font color="blue"><b>Vans G Dragon</b></font></p>
+				<p class="dongia">Giá:<span class="gia"> <font color="red">Liên hệ</font></span></p>
+			</div>
+			<div class="sach">
+
+				<a href= "Lienhe.html"><img class="hinhsach" src="images/2ca15b2843e9e852f5c53a9c8709e91a.jpg"/></a?>
+				<p class="tensach"><font color="blue"><b>Nike AF1 Paranoise</b></font></p>
+				<p class="dongia">Giá:<span class="gia"> <font color="red">Liên hệ</font></span></p>
+			</div>
+			<div class="sach">
+				<a href= "Lienhe.html"><img class="hinhsach" src="images/giaynikegdragon8-7cf087f3.jpg" /></a>
+				<p class="tensach"><font color="blue"><b>Nike AF1 Paranoise 2.0</b></font></p>
+				<p class="dongia">Giá:<span class="gia"> <font color="red">Liên hệ</font></span></p>
+			</div>
+			<div class="sach">
+				<a href= "Lienhe.html"><img class="hinhsach" src="images/80489f0dab5956070f48.jpg" /></a>
+				<p class="tensach"><font color="blue"><b>Vans vault og slip caro</b></font></p>
+				<p class="dongia">Giá:<span class="gia"> <font color="red">Liên hệ</font></span></p>
+			</div>
+			<div class="sach">
+				<a href= "Lienhe.html"><img class="hinhsach" src="images/esdLz4P.jpg" /></a>
+				<p class="tensach"><font color="blue"><b>Balenciaga Black version</b></font></p>
+				<p class="dongia">Giá:<span class="gia"> <font color="red">Liên hệ</font></span></p>
+			</div>
+			<div class="sach">
+				<a href= "Lienhe.html"><img class="hinhsach" src="images/70cf603ead5c28ded380fab7ed1299c7.jpg" /></a>
+				<p class="tensach"><font color="blue"><b>Vans vault</b></font></p>
+				<p class="dongia">Giá:<span class="gia"> <font color="red">Liên hệ</font></span></p>
+			</div>
+			<div class="sach">
+				<a href= "Lienhe.html"><img class="hinhsach" src="images/giay_converse_trang_co_thap.jpg"/></a>
+				<p class="tensach"><font color="blue"><b>Converse White</b></font></p>
+				<p class="dongia">Giá:<span class="gia"> <font color="red">Liên hệ</font></span></p>
+			</div>
+		</aside>
+			<div id="chuyentrang" style="margin: 0px auto; width: 90px; position: relative; left: 100px;">
+				<a href="cuahang.html"><img src="images/chuyenhinh/prev.png"></a>
+				<a href="cuahang.html" style="text-decoration: none;"><b style="position: relative; bottom: 15px;color:black;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">1</b></a>
+				<a href="cuahang1.html" style="text-decoration: none;"><b style="position: relative; bottom: 15px;color:black;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">2</b></a>
+				<a href="cuahang1.html"><img src="images/chuyenhinh/next.png"></a>
+			</div>
+		<footer style="background-color: rgba(99,99,99,0.6); border: 1px solid;">
+			<div id="logo">
+	`		  <img style="position: relative; bottom: 10px; left: 20px;" src="images/logo giay.webp" >
+			</div>
+		  <div id="gt">
+			  	<h2>&nbsp;</h2>
+		  	<h2>&nbsp;</h2>
+			  <h2 style="float: right;position: relative; right: 40px;">NHÀ PHÂN PHỐI SỈ VÀ LẺ GIÀY UY TÍN TẠI VIỆT NAM</h2>
+            </div>
+		  <hr style="clear: both;">
+			<div id="follow">
+				<p>FOLLOW US ON:</p>
+			</div>	
+			<div id="iconfollow">
+				<a href="https://www.facebook.com/	"><img src="images/logofb.jpg" width="50px"></a>
+			</div>
+			<hr>
+			<div id="thongtin">
+				<div id="tencongty">
+					<p>CHUỖI THE SNEAKER VIỆT NAM</p>
+					<h4>Giấy phép kinh doanh: xxx</h4>
+				</div>
+				<div id="diachi">
+					<p>ĐỊA CHỈ</p>
+					<h4>Địa chỉ: xxx</h4>
+					<h4>Điện thoại:xxx</h4>
+				</div>
+				<div id="thongtinlienhe">
+					<p>THÔNG TIN LIÊN HỆ</p>
+					<h4>Email: xxx@gmail.com</h4>
+					<h4>Skype: xxx</h4>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

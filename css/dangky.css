@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+section{
+	width:750px;
+	padding: 25px;
+}
+fieldset#dangky p{
+	background: linear-gradient(#a5b4c4, #206AB5, #206AB5);
+	text-align: center;
+	font-weight: bold;
+}
+fieldset{
+	background-color:#A9A9A9;
+}
+input#sm[type=submit],input[type=reset]{
+	background-color: #206AB5;
+	height: 30px;
+	width: 80px;
+	border-radius: 3px;
+	border: 0px solid;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 10px;
+}
+input#sm[type=submit]:hover,input[type=reset]:hover{
+	background-color:red;
+	font-style: oblique;
+	transform: scale(1.3);
+}
+.in{
+	margin: 40px;
+} 
+.mid{
+	text-align: center;
+	margin: 10px;
+	margin-right: 240px;
+}
